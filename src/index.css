@@ -81,21 +81,26 @@ span {
 .flex {
   display: flex;
   gap: 10px;
-
   flex-direction: column;
   margin-bottom: 5px;
   background-color: #213547;
-  padding: 30px;
+  padding: 16px;
   width: 100%;
 }
 
 .flex2 {
   display: flex;
-
-
   border-top: #213547 1px solid;
   background-color: #071831;
-  padding: 30px;
+  padding-inline: 16px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.grid {
+  display: grid;
+  column-gap: 38px;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
 }
 

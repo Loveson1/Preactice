@@ -1,4 +1,4 @@
-import { useContext, useState, useRef } from "react";
+import { useContext, useState, useRef, useEffect } from "react";
 import { ItemPortal } from "./context";
 
 
@@ -8,12 +8,20 @@ export default function AddFood() {
 
   const inputRef = useRef(null);
 
-  const addFood = (e) => {
-    
-    const food = inputRef.current.value;
-    setNewFood(food);
-    setItems([...items, newFood]);
+  useEffect(()=>{
+
+    inputRef.current.focus()
+
+  },[])
+
+  const addFood = () => {
    
+    
+    const food = inputRef.current.value.trim();
+   if (!food) return
+    setItems([...items, food]);
+    inputRef.current.value = "";
+
   };
 
     // const changehandler =(e)=>{
@@ -21,6 +29,7 @@ export default function AddFood() {
 
     // }
 
+ 
   return (
     <div className="flex">
       <textarea

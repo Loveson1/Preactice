@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
-import Food from "./Counter";
-import Counter from "./Food";
+import Counter from "./Counter";
+import Food from "./Food";
 import { ItemProvider } from "./context";
 import AddFood from "./AddFood";
 
@@ -9,11 +9,15 @@ function App() {
   return (
     <ItemProvider>
       <h2>Food Tracker</h2>
-      <div className="flex2">
-        <AddFood />
+      <div>
+        <AddFood />   
         <Counter />
+        <Food />
       </div>
-      <Food />
+      <div> 
+     
+     
+      </div>
     </ItemProvider>
   );
 }

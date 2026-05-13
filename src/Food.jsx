@@ -11,7 +11,7 @@ export default function Food() {
   };
 
   return (
-    <div>
+    <div className="grid">
       {items.map((f, index) => (
         <div className="flex" key={index}>
           {f}
