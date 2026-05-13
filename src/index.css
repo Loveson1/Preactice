@@ -86,6 +86,7 @@ span {
   margin-bottom: 5px;
   background-color: #213547;
   padding: 30px;
+  width: 100%;
 }
 
 .flex2 {
@@ -94,7 +95,8 @@ span {
 
   border-top: #213547 1px solid;
   background-color: #071831;
-  padding: 15px;
+  padding: 30px;
+  width: 100%;
 }
 
 .flex3 {
